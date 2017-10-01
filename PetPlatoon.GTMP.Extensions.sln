@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26923.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E4F6CDDC-AAF1-4551-A280-D649D8E5408E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetPlatoon.GTMP.Extensions", "src\PetPlatoon.GTMP.Extensions\PetPlatoon.GTMP.Extensions.csproj", "{6818AD3F-449E-4753-99BF-63FC87BE0FA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6818AD3F-449E-4753-99BF-63FC87BE0FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6818AD3F-449E-4753-99BF-63FC87BE0FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6818AD3F-449E-4753-99BF-63FC87BE0FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6818AD3F-449E-4753-99BF-63FC87BE0FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6818AD3F-449E-4753-99BF-63FC87BE0FA5} = {E4F6CDDC-AAF1-4551-A280-D649D8E5408E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {555D439A-5CFB-452E-BC3D-275C5E2F0371}
+	EndGlobalSection
+EndGlobal
