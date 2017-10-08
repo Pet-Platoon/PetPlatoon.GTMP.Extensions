@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\APIExtensions.cs" />
+    <Compile Include="Extensions\ServerAPIExtensions.cs" />
     <Compile Include="Extensions\Vector3Extensions.cs" />
     <Compile Include="Managers\PolyColShape.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
