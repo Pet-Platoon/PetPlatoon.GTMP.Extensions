@@ -10,7 +10,7 @@ namespace PetPlatoon.GTMP.Extensions.Extensions
     /// <summary>
     /// TODO
     /// </summary>
-    public static class APIExtensions
+    public static class ServerAPIExtensions
     {
         /// <summary>
         /// Creates a new PolyColShape
@@ -20,7 +20,7 @@ namespace PetPlatoon.GTMP.Extensions.Extensions
         /// <param name="z"></param>
         /// <param name="height"></param>
         /// <returns></returns>
-        public static PolyColShape CreatePolyColShape(this API api, Vector2[] points, float z, float height)
+        public static PolyColShape CreatePolyColShape(this ServerAPI api, Vector2[] points, float z, float height)
         {
             if (points.Length < 3)
             {

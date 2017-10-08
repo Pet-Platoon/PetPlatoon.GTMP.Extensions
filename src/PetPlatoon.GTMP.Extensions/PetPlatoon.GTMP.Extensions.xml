@@ -4,12 +4,12 @@
         <name>PetPlatoon.GTMP.Extensions</name>
     </assembly>
     <members>
-        <member name="T:PetPlatoon.GTMP.Extensions.Extensions.APIExtensions">
+        <member name="T:PetPlatoon.GTMP.Extensions.Extensions.ServerAPIExtensions">
             <summary>
             TODO
             </summary>
         </member>
-        <member name="M:PetPlatoon.GTMP.Extensions.Extensions.APIExtensions.CreatePolyColShape(GrandTheftMultiplayer.Server.API.API,PetPlatoon.GTMP.Extensions.Math.Vector2[],System.Single,System.Single)">
+        <member name="M:PetPlatoon.GTMP.Extensions.Extensions.ServerAPIExtensions.CreatePolyColShape(GrandTheftMultiplayer.Server.API.ServerAPI,PetPlatoon.GTMP.Extensions.Math.Vector2[],System.Single,System.Single)">
             <summary>
             Creates a new PolyColShape
             </summary>
