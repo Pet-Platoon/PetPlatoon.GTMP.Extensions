@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("PetPlatoon.GTMP.Extensions")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Pet Platoons extensions for GTMP")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Pet Platoon Community")]
 [assembly: AssemblyProduct("PetPlatoon.GTMP.Extensions")]
