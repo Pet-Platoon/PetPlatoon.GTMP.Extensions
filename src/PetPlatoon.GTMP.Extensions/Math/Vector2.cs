@@ -187,11 +187,9 @@ namespace PetPlatoon.GTMP.Extensions.Math
         {
             return left.DistanceSquared(right);
         }
-
-        // Welp, im a lazy fuck <3
-#warning TODO: Write something in summary. Maybe a poem or something. I dont know. lol
+        
         /// <summary>
-        /// TODO
+        /// Interpolates between to points
         /// </summary>
         /// <param name="start"></param>
         /// <param name="end"></param>
@@ -199,7 +197,7 @@ namespace PetPlatoon.GTMP.Extensions.Math
         /// <returns></returns>
         public static Vector2 Lerp(Vector2 start, Vector2 end, float n)
         {
-            return Vector3.Lerp(start.ToVector3(), end.ToVector3(), n).ToVector2();
+            return start + n * (end - start) * n;
         }
 
         // ReSharper disable once InconsistentNaming
@@ -217,6 +215,26 @@ namespace PetPlatoon.GTMP.Extensions.Math
         #endregion Static Methods
 
         #region Operator
+
+        /// <summary>
+        /// Provides an explicit conversation from Vector3 to Vector2
+        /// </summary>
+        /// <param name="vec"></param>
+        /// <returns></returns>
+        public static explicit operator Vector2(Vector3 vec)
+        {
+            return vec.ToVector2();
+        }
+
+        /// <summary>
+        /// Provides an explicit conversation from Vector2 to Vector3
+        /// </summary>
+        /// <param name="vec"></param>
+        /// <returns></returns>
+        public static explicit operator Vector3(Vector2 vec)
+        {
+            return vec.ToVector3();
+        }
 
         /// <summary>
         /// Adds a point onto another point
@@ -291,6 +309,44 @@ namespace PetPlatoon.GTMP.Extensions.Math
         }
 
         /// <summary>
+        /// Multiplies a point with a float
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static Vector2 operator *(Vector2 left, float right)
+        {
+            if (ReferenceEquals(left, null))
+            {
+                throw new ArgumentNullException(nameof(left));
+            }
+
+            var vec = left.Copy();
+            vec.X *= right;
+            vec.Y *= right;
+            return vec;
+        }
+
+        /// <summary>
+        /// Multiplies a point with a float
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static Vector2 operator *(float right, Vector2 left)
+        {
+            if (ReferenceEquals(left, null))
+            {
+                throw new ArgumentNullException(nameof(left));
+            }
+
+            var vec = left.Copy();
+            vec.X *= right;
+            vec.Y *= right;
+            return vec;
+        }
+
+        /// <summary>
         /// Divides a point with another point
         /// </summary>
         /// <param name="left"></param>
@@ -311,6 +367,44 @@ namespace PetPlatoon.GTMP.Extensions.Math
             var vec = left.Copy();
             vec.X /= right.X;
             vec.Y /= right.Y;
+            return vec;
+        }
+
+        /// <summary>
+        /// Divides a point with a float
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static Vector2 operator /(Vector2 left, float right)
+        {
+            if (ReferenceEquals(left, null))
+            {
+                throw new ArgumentNullException(nameof(left));
+            }
+
+            var vec = left.Copy();
+            vec.X /= right;
+            vec.Y /= right;
+            return vec;
+        }
+
+        /// <summary>
+        /// Divides a point with a float
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static Vector2 operator /(float right, Vector2 left)
+        {
+            if (ReferenceEquals(left, null))
+            {
+                throw new ArgumentNullException(nameof(left));
+            }
+
+            var vec = left.Copy();
+            vec.X /= right;
+            vec.Y /= right;
             return vec;
         }
 
