@@ -188,7 +188,7 @@
         </member>
         <member name="M:PetPlatoon.GTMP.Extensions.Math.Vector2.Lerp(PetPlatoon.GTMP.Extensions.Math.Vector2,PetPlatoon.GTMP.Extensions.Math.Vector2,System.Single)">
             <summary>
-            TODO
+            Interpolates between to points
             </summary>
             <param name="start"></param>
             <param name="end"></param>
@@ -199,6 +199,20 @@
             <summary>
             Returns a random point
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PetPlatoon.GTMP.Extensions.Math.Vector2.op_Explicit(GrandTheftMultiplayer.Shared.Math.Vector3)~PetPlatoon.GTMP.Extensions.Math.Vector2">
+            <summary>
+            Provides an explicit conversation from Vector3 to Vector2
+            </summary>
+            <param name="vec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PetPlatoon.GTMP.Extensions.Math.Vector2.op_Explicit(PetPlatoon.GTMP.Extensions.Math.Vector2)~GrandTheftMultiplayer.Shared.Math.Vector3">
+            <summary>
+            Provides an explicit conversation from Vector2 to Vector3
+            </summary>
+            <param name="vec"></param>
             <returns></returns>
         </member>
         <member name="M:PetPlatoon.GTMP.Extensions.Math.Vector2.op_Addition(PetPlatoon.GTMP.Extensions.Math.Vector2,PetPlatoon.GTMP.Extensions.Math.Vector2)">
@@ -225,9 +239,41 @@
             <param name="right"></param>
             <returns></returns>
         </member>
+        <member name="M:PetPlatoon.GTMP.Extensions.Math.Vector2.op_Multiply(PetPlatoon.GTMP.Extensions.Math.Vector2,System.Single)">
+            <summary>
+            Multiplies a point with a float
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PetPlatoon.GTMP.Extensions.Math.Vector2.op_Multiply(System.Single,PetPlatoon.GTMP.Extensions.Math.Vector2)">
+            <summary>
+            Multiplies a point with a float
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns></returns>
+        </member>
         <member name="M:PetPlatoon.GTMP.Extensions.Math.Vector2.op_Division(PetPlatoon.GTMP.Extensions.Math.Vector2,PetPlatoon.GTMP.Extensions.Math.Vector2)">
             <summary>
             Divides a point with another point
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PetPlatoon.GTMP.Extensions.Math.Vector2.op_Division(PetPlatoon.GTMP.Extensions.Math.Vector2,System.Single)">
+            <summary>
+            Divides a point with a float
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PetPlatoon.GTMP.Extensions.Math.Vector2.op_Division(System.Single,PetPlatoon.GTMP.Extensions.Math.Vector2)">
+            <summary>
+            Divides a point with a float
             </summary>
             <param name="left"></param>
             <param name="right"></param>

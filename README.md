@@ -3,6 +3,13 @@
 ![NuGet](https://img.shields.io/nuget/v/PetPlatoon.GTMP.Extensions.svg)
 
 ## Changelogs
+### 0.1.91.108 (Codename: `Mercury`)
+```diff
++ Updated to latest GTMP Version
++ Added operator to multiply and divide Vector2 with floats
++ Added ways explicit conversations from Vector3 to Vector2 and reverse
++ Implemented linear interpolation implemenation for Vector2
+```
 ### 0.1.7.579 (Codename: `Mercury`)
 ```diff
 o Moved API extension to ServerAPI
