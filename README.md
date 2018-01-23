@@ -3,6 +3,10 @@
 ![NuGet](https://img.shields.io/nuget/v/PetPlatoon.GTMP.Extensions.svg)
 
 ## Changelogs
+### ``Pre-Release`` 0.1.114.710 (Codename: `Mercury`)
+```diff
++ Updated to the latest GTMP Stage2 Version
+```
 ### 0.1.91.108 (Codename: `Mercury`)
 ```diff
 + Updated to latest GTMP Version
